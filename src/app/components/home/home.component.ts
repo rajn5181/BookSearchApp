@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
       });
   }
   async searchBooks(searchTerm: string) {
-    const url = `http://openlibrary.org/search.json?q=${searchTerm}&offset=${
+    const url = `https://openlibrary.org/search.json?q=${searchTerm}&offset=${
       (this.currentPage - 1) * 10
     }`;
     try {
@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit {
         this.allBooks = result.docs.map((doc: any) => ({
           title: doc.title,
           author: doc.author_name?.[0] || 'Unknown Author',
-          coverUrl: `http://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg`,
+          coverUrl: `https://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg`,
           key: doc.key,
         }));
         this, (this.showTrendingSubjects = false);
