@@ -1,0 +1,37 @@
+<div class="search-container">
+  <div class="tw-text-24-px tw-font-600">Open Books Library</div>
+  <input type="text" [formControl]="bookSearch" placeholder="Search for a book...">
+  <button (click)="showClearButton ? clearSearch():searchBooks(bookSearch.value)" >{{showClearButton?'Clear':'Search'}}</button>
+</div>
+
+<div class="error" *ngIf="showerror">{{ error }}</div>
+
+<div class="book-list" *ngIf="booklist.length > 0">
+  <div class="book" *ngFor="let book of booklist.slice(0,10)">
+    <div class="details">
+      <h3>{{ book.title }}</h3>
+      <p>Author: {{ book.author}}</p>
+      <img src="{{ book.coverUrl }}" alt="Book cover">
+      <!-- <p>Author: {{ book.}}</p> -->
+    </div>
+  </div>
+</div>
+
+<div class="pagination" *ngIf="totalSearchResults > 0">
+  <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+  <span>{{ currentPage }}</span>
+  <button (click)="nextPage()" [disabled]="currentPage * 10 >= totalSearchResults">Next</button>
+</div>
+
+<div class="tw-flex tw-flex-row tw-m-24-px" *ngIf="showTrendingSubjects">
+  <section class="trending-subjects">
+    <div class="tw-font-600 tw-text-24-px">Trending Subjects</div>
+    <ul class="tw-list-none tw-pl-0">
+      <li class="tw-text-16-px tw-cursor-pointer tw-p-12-px" *ngFor="let subject of trendingSubjects" routerLink="/trending-subject/{{ subject.name }}">
+        {{ subject.name }}
+      </li>
+    </ul>
+  </section>
+</div>
+
+

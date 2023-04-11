@@ -1,0 +1,66 @@
+/* Style for the table */
+.table-view {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* Style for the table header */
+.table-view th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 8px;
+  font-weight: bold;
+}
+
+/* Style for the table rows */
+.table-view td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Style for the first column of the table rows */
+.table-view td:first-child {
+  width: 60%;
+}
+
+/* Style for the link in the first column of the table rows */
+.table-view a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Style for the hover effect of the link in the first column of the table rows */
+.table-view a:hover {
+  text-decoration: underline;
+}
+
+/* Style for the table row with the class "table-row" */
+.table-row {
+  background-color: #f2f2f2;
+}
+
+/* Style for the table row with the class "row-data" */
+.row-data {
+  background-color: #fff;
+}
+
+/* Style for the button */
+.home-bt a {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+/* Style for the button hover effect */
+.home-bt button:hover {
+  opacity: 0.8;
+}

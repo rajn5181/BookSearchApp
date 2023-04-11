@@ -1,0 +1,121 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.tw-text-24-px {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.book {
+  width: 30%;
+  margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.details {
+  padding: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.tw-flex {
+  display: flex;
+}
+
+.tw-flex-row {
+  flex-direction: row;
+}
+
+.tw-m-24-px {
+  margin: 24px;
+}
+
+.trending-subjects {
+  width: 30%;
+  margin-right: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tw-font-600 {
+  font-weight: 600;
+}
+
+.tw-list-none {
+  list-style: none;
+  padding: 0;
+}
+
+.tw-p-12-px {
+  padding: 12px;
+}
+
+.tw-text-16-px {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.tw-cursor-pointer {
+  cursor: pointer;
+}
+
